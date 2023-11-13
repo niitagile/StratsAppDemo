@@ -1,0 +1,17 @@
+
+<router-outlet></router-outlet>
+
+<h3>Get Employee Info</h3>
+<div>
+  <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)"> 
+    <label for="">Enter Employee Id</label>
+    <input type="text" name="response_type" ngModel="code">
+    <input type="text" name="client_id" ngModel="javainuse">
+    <input type="text" name="redirect_uri" ngModel="http://localhost:8080/showEmployees">
+    <input type="text" name="scope" ngModel="read">
+    <input type="submit" value="Get Employee Info">
+  </form>
+ <!-- <a href="http://localhost:8080/oauth/authorize">click</a> -->
+</div>
+
+
